@@ -14,6 +14,9 @@ margin_bottom = 8.5321
 size_flags_horizontal = 0
 size_flags_vertical = 0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Panel" type="PanelContainer" parent="."]
 margin_left = 129.0
@@ -40,7 +43,6 @@ margin_bottom = 393.0
 custom_constants/separation = 20
 
 [node name="Statistics" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox"]
-editor/display_folded = true
 margin_right = 134.0
 margin_bottom = 74.0
 custom_constants/vseparation = 6
@@ -103,7 +105,6 @@ margin_right = 134.0
 margin_bottom = 201.0
 
 [node name="Next" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox/CenterContainer"]
-editor/display_folded = true
 margin_left = 40.0
 margin_right = 93.0
 margin_bottom = 107.0

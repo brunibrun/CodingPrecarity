@@ -1,19 +1,24 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Shapes.gd" type="Script" id=1]
 [ext_resource path="res://tile.png" type="Texture" id=2]
+[ext_resource path="res://shape_pictures/maedchen_3.png" type="Texture" id=3]
+[ext_resource path="res://shape_pictures/maedchen_2.png" type="Texture" id=4]
+[ext_resource path="res://shape_pictures/maedchen_1.png" type="Texture" id=5]
+[ext_resource path="res://shape_pictures/maedchen_4.png" type="Texture" id=6]
 
 [node name="Shapes" type="GridContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_constants/vseparation = 20
 custom_constants/hseparation = 20
 columns = 3
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="L" type="GridContainer" parent="."]
-editor/display_folded = true
 modulate = Color( 0.870588, 0.509804, 0, 1 )
 margin_right = 78.0
 margin_bottom = 78.0
@@ -84,7 +89,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="J" type="GridContainer" parent="."]
-editor/display_folded = true
 modulate = Color( 0, 0.196078, 0.870588, 1 )
 margin_left = 98.0
 margin_right = 176.0
@@ -156,7 +160,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="S" type="GridContainer" parent="."]
-editor/display_folded = true
 modulate = Color( 0, 0.792157, 0.0313726, 1 )
 margin_left = 196.0
 margin_right = 300.0
@@ -228,7 +231,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="Z" type="GridContainer" parent="."]
-editor/display_folded = true
 modulate = Color( 0.792157, 0, 0, 1 )
 margin_top = 98.0
 margin_right = 78.0
@@ -300,7 +302,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="T" type="GridContainer" parent="."]
-editor/display_folded = true
 modulate = Color( 0.619608, 0, 0.815686, 1 )
 margin_left = 98.0
 margin_top = 98.0
@@ -373,7 +374,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="I" type="GridContainer" parent="."]
-editor/display_folded = true
 modulate = Color( 0, 0.815686, 0.756863, 1 )
 margin_left = 196.0
 margin_top = 98.0
@@ -500,8 +500,6 @@ margin_bottom = 104.0
 texture = ExtResource( 2 )
 
 [node name="C" type="GridContainer" parent="."]
-editor/display_folded = true
-modulate = Color( 0.870588, 0.835294, 0, 1 )
 margin_top = 222.0
 margin_right = 78.0
 margin_bottom = 274.0
@@ -512,23 +510,23 @@ columns = 2
 [node name="Cell" type="TextureRect" parent="C"]
 margin_right = 26.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 5 )
 
 [node name="Cell2" type="TextureRect" parent="C"]
 margin_left = 26.0
 margin_right = 52.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="Cell3" type="TextureRect" parent="C"]
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="Cell4" type="TextureRect" parent="C"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 6 )

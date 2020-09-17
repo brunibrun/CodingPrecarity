@@ -13,6 +13,7 @@ func get_shape() -> ShapeData:
 	s.color = _shapes[_index].color
 	s.coors = _shapes[_index].coors
 	s.grid = _shapes[_index].grid
+	s.cells = _shapes[_index].cells
 	return s
 
 
@@ -21,6 +22,7 @@ func _ready():
 		var data = ShapeData.new()
 		data.name = shape.name
 		data.color = shape.modulate
+		data.cells = shape.get_children()
 		
 		var size = shape.columns
 		var s2 = size / 2
