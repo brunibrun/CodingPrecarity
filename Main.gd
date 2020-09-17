@@ -7,7 +7,7 @@ const DISABLED = true
 const ENABLED = false
 const MAX_LEVEL = 100
 const START_POS = 5
-const END_POS =  25
+const END_POS =  40
 const TICK_SPEED = 1.0
 const FAST_MULTIPLE = 10
 const WAIT_TIME = 0.15
@@ -86,6 +86,7 @@ func place_shape(index, add_tiles = false, lock = false, color = Color(0)):
 	var size = shape.coors.size()
 	var offset = shape.coors[0]
 	var y = 0
+	var i = 0
 	while y < size and ok:
 		for x in size:
 			if shape.grid[y][x]:
@@ -100,6 +101,8 @@ func place_shape(index, add_tiles = false, lock = false, color = Color(0)):
 						break
 					if add_tiles and grid_pos >= 0:
 						gui.grid.get_child(grid_pos).modulate = color
+						gui.grid.get_child(grid_pos).texture = shape.cells.get_child(i).texture
+			i +=1
 		y += 1
 	return ok
 

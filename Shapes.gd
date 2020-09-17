@@ -22,7 +22,7 @@ func _ready():
 		var data = ShapeData.new()
 		data.name = shape.name
 		data.color = shape.modulate
-		data.cells = shape.get_children()
+		data.cells = shape
 		
 		var size = shape.columns
 		var s2 = size / 2
