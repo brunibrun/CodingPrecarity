@@ -63,7 +63,7 @@ func set_next_shape(shape: ShapeData):
 		for row in [0, 1]:
 			if shape.grid[row][col]:
 				next.get_child(i).modulate = shape.color
-				#next.get_child(i).texture = shape.cells.get_child(i).texture
+				next.get_child(i).texture = shape.cells.get_child(i).texture
 			i += 1
 
 
