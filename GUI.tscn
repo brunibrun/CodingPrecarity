@@ -1,9 +1,56 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
 [ext_resource path="res://tile.png" type="Texture" id=2]
 [ext_resource path="res://grid.png" type="Texture" id=3]
 [ext_resource path="res://tile2.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Fonts/RobotoMono-Regular.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 14
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 10
+font_data = ExtResource( 6 )
 
 [node name="GUI" type="CenterContainer"]
 pause_mode = 1
@@ -22,9 +69,9 @@ __meta__ = {
 
 [node name="Panel" type="PanelContainer" parent="."]
 light_mask = 0
-margin_left = 38.0
+margin_left = 67.0
 margin_top = 123.0
-margin_right = 562.0
+margin_right = 591.0
 margin_bottom = 677.0
 
 [node name="ColorRect" type="ColorRect" parent="Panel"]
@@ -46,79 +93,88 @@ margin_bottom = 540.0
 rect_min_size = Vector2( 200, 0 )
 
 [node name="VBox" type="VBoxContainer" parent="Panel/HBoxContainer/Left"]
-margin_left = 26.0
-margin_top = 176.0
-margin_right = 173.0
-margin_bottom = 364.0
+margin_left = 25.0
+margin_top = 88.0
+margin_right = 175.0
+margin_bottom = 452.0
 custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
-margin_right = 147.0
-margin_bottom = 14.0
+margin_right = 150.0
+margin_bottom = 35.0
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Housing Shortage"
+text = "Housing 
+Shortage"
 
 [node name="Statistics" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox"]
-editor/display_folded = true
 modulate = Color( 0, 0, 0, 1 )
-margin_top = 34.0
-margin_right = 147.0
-margin_bottom = 108.0
+margin_top = 55.0
+margin_right = 150.0
+margin_bottom = 149.0
 custom_constants/vseparation = 6
 custom_constants/hseparation = 10
 columns = 2
 
 [node name="_Level" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_right = 101.0
-margin_bottom = 14.0
-text = "Berlin"
+margin_right = 72.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Level"
 
 [node name="Level" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 111.0
-margin_right = 147.0
-margin_bottom = 14.0
-text = "1870"
+margin_left = 82.0
+margin_right = 106.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 3 )
+text = "1"
 
 [node name="_Countdown" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 20.0
-margin_right = 101.0
-margin_bottom = 34.0
-text = "Stunde"
+margin_top = 25.0
+margin_right = 72.0
+margin_bottom = 44.0
+custom_fonts/font = SubResource( 4 )
+text = "Timer"
 
 [node name="Cuntdown" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 111.0
-margin_top = 20.0
-margin_right = 147.0
-margin_bottom = 34.0
-text = "00:00"
+margin_left = 82.0
+margin_top = 25.0
+margin_right = 106.0
+margin_bottom = 44.0
+custom_fonts/font = SubResource( 5 )
+text = "120"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="_Lines" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 40.0
-margin_right = 101.0
-margin_bottom = 54.0
-text = "Bewohner"
+margin_top = 50.0
+margin_right = 72.0
+margin_bottom = 69.0
+custom_fonts/font = SubResource( 6 )
+text = "Residents"
 
 [node name="Lines" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 111.0
-margin_top = 40.0
-margin_right = 147.0
-margin_bottom = 54.0
+margin_left = 82.0
+margin_top = 50.0
+margin_right = 106.0
+margin_bottom = 69.0
+custom_fonts/font = SubResource( 7 )
 text = "0"
 
 [node name="_Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 60.0
-margin_right = 101.0
-margin_bottom = 74.0
-text = "Mieteinnahmen"
+margin_top = 75.0
+margin_right = 72.0
+margin_bottom = 94.0
+custom_fonts/font = SubResource( 8 )
+text = "Rooms"
 
 [node name="Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 111.0
-margin_top = 60.0
-margin_right = 147.0
-margin_bottom = 74.0
+margin_left = 82.0
+margin_top = 75.0
+margin_right = 106.0
+margin_bottom = 94.0
+custom_fonts/font = SubResource( 9 )
 text = "0"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -131,11 +187,9 @@ margin_right = 147.0
 margin_bottom = 232.0
 
 [node name="Next" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox/CenterContainer"]
-editor/display_folded = true
-margin_left = 73.0
-margin_top = 52.0
-margin_right = 73.0
-margin_bottom = 52.0
+margin_left = 47.0
+margin_right = 99.0
+margin_bottom = 104.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 2
@@ -191,9 +245,10 @@ margin_bottom = 104.0
 texture = ExtResource( 2 )
 
 [node name="NewGame" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 128.0
-margin_right = 147.0
-margin_bottom = 148.0
+margin_top = 169.0
+margin_right = 150.0
+margin_bottom = 197.0
+custom_fonts/font = SubResource( 10 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.498039, 0.498039, 0.498039, 1 )
@@ -209,7 +264,6 @@ margin_bottom = 290.0
 text = "Pause"
 
 [node name="HBox" type="HBoxContainer" parent="Panel/HBoxContainer/Left/VBox"]
-editor/display_folded = true
 visible = false
 margin_top = 310.0
 margin_right = 147.0
@@ -233,7 +287,6 @@ max_value = 0.0
 ticks_on_borders = true
 
 [node name="HBox2" type="HBoxContainer" parent="Panel/HBoxContainer/Left/VBox"]
-editor/display_folded = true
 visible = false
 margin_top = 310.0
 margin_right = 147.0
@@ -254,15 +307,29 @@ min_value = -24.0
 max_value = 0.0
 
 [node name="About" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 168.0
-margin_right = 147.0
-margin_bottom = 188.0
+margin_top = 217.0
+margin_right = 150.0
+margin_bottom = 245.0
+custom_fonts/font = SubResource( 11 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.388235, 0.388235, 0.388235, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
 text = "About"
 flat = true
+
+[node name="Label2" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
+margin_top = 265.0
+margin_right = 150.0
+margin_bottom = 364.0
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Here you can play the 
+Housing Shortage-Tetris! 
+Move the typical
+inhabitants of 19th 
+century Berlin into the 
+available space."
 
 [node name="Right" type="MarginContainer" parent="Panel/HBoxContainer"]
 margin_left = 204.0
@@ -319,9 +386,9 @@ margin_bottom = 26.0
 texture = ExtResource( 4 )
 
 [node name="AboutBox" type="AcceptDialog" parent="."]
-margin_left = 168.0
+margin_left = 198.0
 margin_top = 320.0
-margin_right = 431.0
+margin_right = 461.0
 margin_bottom = 480.0
 window_title = "Tetron"
 dialog_text = "Space bar - Hard drop

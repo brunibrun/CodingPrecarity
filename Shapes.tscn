@@ -32,6 +32,7 @@
 [ext_resource path="res://shape_pictures/maedchen_4.png" type="Texture" id=30]
 
 [node name="Shapes" type="GridContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -21.8283
