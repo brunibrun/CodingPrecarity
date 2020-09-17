@@ -17,10 +17,10 @@ __meta__ = {
 pause_mode = 2
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 131.0
-margin_top = 299.0
-margin_right = 469.0
-margin_bottom = 501.0
+margin_left = 51.0
+margin_top = 123.0
+margin_right = 549.0
+margin_bottom = 677.0
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 pause_mode = 2

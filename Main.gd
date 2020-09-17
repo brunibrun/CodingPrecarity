@@ -25,6 +25,7 @@ var pos = 0
 var count = 0
 var bonus = 0
 
+
 func _ready():
 	gui = $GUI
 	gui.connect("button_pressed", self, "_button_pressed")
@@ -153,7 +154,7 @@ func _start_game():
 	state = PLAYING
 	music_position = 0.0
 	if _music_is_on():
-		_music(PLAY)
+		pass
 	clear_grid()
 	#gui.reset_stats(gui.high_score)
 	new_shape()
@@ -207,6 +208,7 @@ func _input(event):
 
 func level_up():
 	count += 1
+	gui.lines += 1
 	if count % 10 == 0:
 		increase_level()
 
@@ -291,14 +293,15 @@ func _sound_is_on():
 func _on_Ticker_timeout():
 	var new_pos = pos + cols
 	if move_shape(new_pos):
-		gui.score += bonus
+		pass
+		#gui.score += bonus
 		#update_high_score()
 	else:
 		if new_pos <= END_POS:
 			_game_over()
 		else:
 			lock_shape_to_grid()
-			check_rows()
+			#check_rows()
 			new_shape()
 
 
