@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Shapes.gd" type="Script" id=1]
 [ext_resource path="res://tile.png" type="Texture" id=2]
@@ -6,6 +6,30 @@
 [ext_resource path="res://shape_pictures/maedchen_2.png" type="Texture" id=4]
 [ext_resource path="res://shape_pictures/maedchen_3.png" type="Texture" id=5]
 [ext_resource path="res://shape_pictures/maedchen_4.png" type="Texture" id=6]
+[ext_resource path="res://shape_pictures/wander_3.png" type="Texture" id=7]
+[ext_resource path="res://shape_pictures/wander_1.png" type="Texture" id=8]
+[ext_resource path="res://shape_pictures/wander_2.png" type="Texture" id=9]
+[ext_resource path="res://shape_pictures/wander_4.png" type="Texture" id=10]
+[ext_resource path="res://shape_pictures/verkauf_2.png" type="Texture" id=11]
+[ext_resource path="res://shape_pictures/verkauf_3.png" type="Texture" id=12]
+[ext_resource path="res://shape_pictures/verkauf_1.png" type="Texture" id=13]
+[ext_resource path="res://shape_pictures/verkauf_4.png" type="Texture" id=14]
+[ext_resource path="res://shape_pictures/schlaf_4.png" type="Texture" id=15]
+[ext_resource path="res://shape_pictures/schlaf_1.png" type="Texture" id=16]
+[ext_resource path="res://shape_pictures/schlaf_2.png" type="Texture" id=17]
+[ext_resource path="res://shape_pictures/schlaf_3.png" type="Texture" id=18]
+[ext_resource path="res://shape_pictures/pension_2.png" type="Texture" id=19]
+[ext_resource path="res://shape_pictures/pension_1.png" type="Texture" id=20]
+[ext_resource path="res://shape_pictures/pension_3.png" type="Texture" id=21]
+[ext_resource path="res://shape_pictures/pension_4.png" type="Texture" id=22]
+[ext_resource path="res://shape_pictures/heim_1.png" type="Texture" id=23]
+[ext_resource path="res://shape_pictures/heim_4.png" type="Texture" id=24]
+[ext_resource path="res://shape_pictures/heim_2.png" type="Texture" id=25]
+[ext_resource path="res://shape_pictures/heim_3.png" type="Texture" id=26]
+[ext_resource path="res://shape_pictures/fabrik_4.png" type="Texture" id=27]
+[ext_resource path="res://shape_pictures/fabrik_1.png" type="Texture" id=28]
+[ext_resource path="res://shape_pictures/fabrik_3.png" type="Texture" id=29]
+[ext_resource path="res://shape_pictures/fabrik_2.png" type="Texture" id=30]
 
 [node name="Shapes" type="GridContainer"]
 anchor_right = 1.0
@@ -19,8 +43,6 @@ __meta__ = {
 }
 
 [node name="L" type="GridContainer" parent="."]
-editor/display_folded = true
-modulate = Color( 0.870588, 0.509804, 0, 1 )
 margin_right = 78.0
 margin_bottom = 78.0
 custom_constants/vseparation = 0
@@ -44,27 +66,27 @@ texture = ExtResource( 2 )
 margin_left = 52.0
 margin_right = 78.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 20 )
 
 [node name="Cell2" type="TextureRect" parent="L"]
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 22 )
 
 [node name="Cell3" type="TextureRect" parent="L"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 21 )
 
 [node name="Cell4" type="TextureRect" parent="L"]
 margin_left = 52.0
 margin_top = 26.0
 margin_right = 78.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 19 )
 
 [node name="BlankCell3" type="TextureRect" parent="L"]
 modulate = Color( 1, 1, 1, 0 )
@@ -90,8 +112,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="J" type="GridContainer" parent="."]
-editor/display_folded = true
-modulate = Color( 0, 0.196078, 0.870588, 1 )
 margin_left = 98.0
 margin_right = 176.0
 margin_bottom = 78.0
@@ -102,7 +122,7 @@ columns = 3
 [node name="Cell" type="TextureRect" parent="J"]
 margin_right = 26.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 25 )
 
 [node name="BlankCell" type="TextureRect" parent="J"]
 modulate = Color( 1, 1, 1, 0 )
@@ -122,21 +142,21 @@ texture = ExtResource( 2 )
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 23 )
 
 [node name="Cell3" type="TextureRect" parent="J"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 26 )
 
 [node name="Cell4" type="TextureRect" parent="J"]
 margin_left = 52.0
 margin_top = 26.0
 margin_right = 78.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 24 )
 
 [node name="BlankCell3" type="TextureRect" parent="J"]
 modulate = Color( 1, 1, 1, 0 )
@@ -162,8 +182,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="S" type="GridContainer" parent="."]
-editor/display_folded = true
-modulate = Color( 0, 0.792157, 0.0313726, 1 )
 margin_left = 196.0
 margin_right = 300.0
 margin_bottom = 78.0
@@ -181,26 +199,26 @@ texture = ExtResource( 2 )
 margin_left = 26.0
 margin_right = 52.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 11 )
 
 [node name="Cell2" type="TextureRect" parent="S"]
 margin_left = 52.0
 margin_right = 78.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 13 )
 
 [node name="Cell3" type="TextureRect" parent="S"]
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 14 )
 
 [node name="Cell4" type="TextureRect" parent="S"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 12 )
 
 [node name="BlankCell2" type="TextureRect" parent="S"]
 modulate = Color( 1, 1, 1, 0 )
@@ -234,8 +252,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="Z" type="GridContainer" parent="."]
-editor/display_folded = true
-modulate = Color( 0.792157, 0, 0, 1 )
 margin_top = 98.0
 margin_right = 78.0
 margin_bottom = 202.0
@@ -246,13 +262,13 @@ columns = 3
 [node name="Cell" type="TextureRect" parent="Z"]
 margin_right = 26.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 8 )
 
 [node name="Cell2" type="TextureRect" parent="Z"]
 margin_left = 26.0
 margin_right = 52.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 9 )
 
 [node name="BlankCell" type="TextureRect" parent="Z"]
 modulate = Color( 1, 1, 1, 0 )
@@ -273,14 +289,14 @@ margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 7 )
 
 [node name="Cell4" type="TextureRect" parent="Z"]
 margin_left = 52.0
 margin_top = 26.0
 margin_right = 78.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 10 )
 
 [node name="BlankCell3" type="TextureRect" parent="Z"]
 modulate = Color( 1, 1, 1, 0 )
@@ -306,8 +322,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="T" type="GridContainer" parent="."]
-editor/display_folded = true
-modulate = Color( 0.619608, 0, 0.815686, 1 )
 margin_left = 98.0
 margin_top = 98.0
 margin_right = 176.0
@@ -326,7 +340,7 @@ texture = ExtResource( 2 )
 margin_left = 26.0
 margin_right = 52.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 16 )
 
 [node name="BlankCell2" type="TextureRect" parent="T"]
 modulate = Color( 1, 1, 1, 0 )
@@ -339,21 +353,21 @@ texture = ExtResource( 2 )
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 17 )
 
 [node name="Cell3" type="TextureRect" parent="T"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 18 )
 
 [node name="Cell4" type="TextureRect" parent="T"]
 margin_left = 52.0
 margin_top = 26.0
 margin_right = 78.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 15 )
 
 [node name="BlankCell3" type="TextureRect" parent="T"]
 modulate = Color( 1, 1, 1, 0 )
@@ -379,8 +393,6 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="I" type="GridContainer" parent="."]
-editor/display_folded = true
-modulate = Color( 0, 0.815686, 0.756863, 1 )
 margin_left = 196.0
 margin_top = 98.0
 margin_right = 300.0
@@ -420,28 +432,28 @@ texture = ExtResource( 2 )
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 28 )
 
 [node name="Cell2" type="TextureRect" parent="I"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 30 )
 
 [node name="Cell3" type="TextureRect" parent="I"]
 margin_left = 52.0
 margin_top = 26.0
 margin_right = 78.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 29 )
 
 [node name="Cell4" type="TextureRect" parent="I"]
 margin_left = 78.0
 margin_top = 26.0
 margin_right = 104.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 27 )
 
 [node name="BlankCell5" type="TextureRect" parent="I"]
 modulate = Color( 1, 1, 1, 0 )
