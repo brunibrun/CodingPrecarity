@@ -11,14 +11,15 @@ var cells: GridContainer
 func rotate_left():
 	for cell in cells.get_children():
 		var rotated_cell = cell.duplicate(true)
-		cell.texture = rotated_cell.texture.rotate(- PI/2)
+		rotated_cell.rect_rotation = 90
+		cell = rotated_cell
 	_rotate_grid(-1, 1)
 
 
 func rotate_right():
 	for cell in cells.get_children():
 		var rotated_cell = cell.duplicate(true)
-		rotated_cell.rect_rotation = PI/2
+		rotated_cell.rect_rotation = 90
 		cell = rotated_cell
 	_rotate_grid(1, -1)
 
