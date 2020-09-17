@@ -124,12 +124,13 @@ text = "Level"
 
 [node name="Level" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
 margin_left = 82.0
-margin_right = 106.0
+margin_right = 98.0
 margin_bottom = 19.0
 custom_fonts/font = SubResource( 3 )
 text = "1"
 
 [node name="_Countdown" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
+visible = false
 margin_top = 25.0
 margin_right = 72.0
 margin_bottom = 44.0
@@ -137,9 +138,9 @@ custom_fonts/font = SubResource( 4 )
 text = "Timer"
 
 [node name="Cuntdown" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 82.0
+visible = false
 margin_top = 25.0
-margin_right = 106.0
+margin_right = 40.0
 margin_bottom = 44.0
 custom_fonts/font = SubResource( 5 )
 text = "120"
@@ -148,19 +149,37 @@ __meta__ = {
 }
 
 [node name="_Lines" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 50.0
+margin_top = 25.0
 margin_right = 72.0
-margin_bottom = 69.0
+margin_bottom = 44.0
 custom_fonts/font = SubResource( 6 )
 text = "Residents"
 
 [node name="Lines" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
 margin_left = 82.0
-margin_top = 50.0
-margin_right = 106.0
-margin_bottom = 69.0
+margin_top = 25.0
+margin_right = 98.0
+margin_bottom = 44.0
 custom_fonts/font = SubResource( 7 )
 text = "0"
+
+[node name="_Goal" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
+margin_top = 50.0
+margin_right = 72.0
+margin_bottom = 69.0
+custom_fonts/font = SubResource( 4 )
+text = "Required"
+
+[node name="Goal" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
+margin_left = 82.0
+margin_top = 50.0
+margin_right = 98.0
+margin_bottom = 69.0
+custom_fonts/font = SubResource( 5 )
+text = "15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="_Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
 visible = false

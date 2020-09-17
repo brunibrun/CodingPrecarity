@@ -12,6 +12,7 @@ var score = 0 setget set_score
 #var high_score = 0 setget set_high_score
 var lines = 0 setget set_lines
 var timer = 120 setget set_timer
+var goal = 15 setget set_goal
 
 signal button_pressed(button_name)
 
@@ -40,12 +41,17 @@ func set_lines(value):
 	lines = value
 
 
-func reset_stats( _score = 0, _lines = 0, _level = 1, _timer = 120):
+func set_goal(value):
+	find_node("Goal").text = str(value)
+	goal = value
+
+func reset_stats( _score = 0, _lines = 0, _level = 1, _timer = 120, _goal = 20):
 	#self.high_score = _high_score
 	self.score = _score
 	self.lines = _lines
 	self.level = _level
 	self.timer = _timer
+	self.goal  = _goal
 
 
 func settings(data):

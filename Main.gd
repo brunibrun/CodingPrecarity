@@ -7,7 +7,7 @@ const DISABLED = true
 const ENABLED = false
 const MAX_LEVEL = 100
 const START_POS = 5
-const END_POS =  40
+const END_POS =  25
 const TICK_SPEED = 1.0
 const FAST_MULTIPLE = 10
 const WAIT_TIME = 0.15
@@ -209,13 +209,16 @@ func _input(event):
 func level_up():
 	count += 1
 	gui.lines += 1
-	if count % 10 == 0:
+	if gui.lines == gui.goal:
 		increase_level()
 
 
 func increase_level():
 	if gui.level < MAX_LEVEL:
 		gui.level += 1
+		gui.goal += 5
+		gui.lines = 0
+		clear_grid()
 		$Ticker.set_wait_time(TICK_SPEED / gui.level)
 
 
