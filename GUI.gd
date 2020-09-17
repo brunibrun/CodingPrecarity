@@ -81,7 +81,7 @@ func clear_all_cells():
 
 func clear_cells(node):
 	for cell in node.get_children():
-		cell.modulate = Color(0)
+		cell.modulate = Color(1)
 
 
 func _on_About_button_down():

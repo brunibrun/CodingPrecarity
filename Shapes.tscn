@@ -2,10 +2,10 @@
 
 [ext_resource path="res://Shapes.gd" type="Script" id=1]
 [ext_resource path="res://tile.png" type="Texture" id=2]
-[ext_resource path="res://shape_pictures/wanderer_2.png" type="Texture" id=3]
-[ext_resource path="res://shape_pictures/grandpa_2.png" type="Texture" id=4]
-[ext_resource path="res://shape_pictures/grandpa_4.png" type="Texture" id=5]
-[ext_resource path="res://shape_pictures/bursche_2.png" type="Texture" id=6]
+[ext_resource path="res://shape_pictures/grandpa_1.png" type="Texture" id=3]
+[ext_resource path="res://shape_pictures/grandpa_4.png" type="Texture" id=4]
+[ext_resource path="res://shape_pictures/grandpa_3.png" type="Texture" id=5]
+[ext_resource path="res://shape_pictures/grandpa_2.png" type="Texture" id=6]
 [ext_resource path="res://shape_pictures/heim_2.png" type="Texture" id=7]
 [ext_resource path="res://shape_pictures/heim_1.png" type="Texture" id=8]
 [ext_resource path="res://shape_pictures/heim_3.png" type="Texture" id=9]
@@ -14,13 +14,13 @@
 [ext_resource path="res://shape_pictures/verkauf_1.png" type="Texture" id=12]
 [ext_resource path="res://shape_pictures/verkauf_4.png" type="Texture" id=13]
 [ext_resource path="res://shape_pictures/verkauf_3.png" type="Texture" id=14]
-[ext_resource path="res://shape_pictures/wanderer_4.png" type="Texture" id=15]
-[ext_resource path="res://shape_pictures/bursche_1.png" type="Texture" id=16]
-[ext_resource path="res://shape_pictures/grandpa_1.png" type="Texture" id=17]
-[ext_resource path="res://shape_pictures/grandpa_3.png" type="Texture" id=18]
-[ext_resource path="res://shape_pictures/wanderer_3.png" type="Texture" id=19]
-[ext_resource path="res://shape_pictures/bursche_3.png" type="Texture" id=20]
-[ext_resource path="res://shape_pictures/wanderer_1.png" type="Texture" id=21]
+[ext_resource path="res://shape_pictures/wanderer_1.png" type="Texture" id=15]
+[ext_resource path="res://shape_pictures/wanderer_2.png" type="Texture" id=16]
+[ext_resource path="res://shape_pictures/wanderer_3.png" type="Texture" id=17]
+[ext_resource path="res://shape_pictures/wanderer_4.png" type="Texture" id=18]
+[ext_resource path="res://shape_pictures/bursche_1.png" type="Texture" id=19]
+[ext_resource path="res://shape_pictures/bursche_2.png" type="Texture" id=20]
+[ext_resource path="res://shape_pictures/bursche_3.png" type="Texture" id=21]
 [ext_resource path="res://shape_pictures/bursche_4.png" type="Texture" id=22]
 [ext_resource path="res://shape_pictures/fabrik_1.png" type="Texture" id=23]
 [ext_resource path="res://shape_pictures/fabrik_2.png" type="Texture" id=24]
@@ -70,27 +70,27 @@ texture = ExtResource( 2 )
 margin_left = 52.0
 margin_right = 78.0
 margin_bottom = 26.0
-texture = ExtResource( 17 )
+texture = ExtResource( 3 )
 
 [node name="Cell2" type="TextureRect" parent="L"]
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 
 [node name="Cell3" type="TextureRect" parent="L"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 18 )
+texture = ExtResource( 5 )
 
 [node name="Cell4" type="TextureRect" parent="L"]
 margin_left = 52.0
 margin_top = 26.0
 margin_right = 78.0
 margin_bottom = 52.0
-texture = ExtResource( 4 )
+texture = ExtResource( 6 )
 
 [node name="BlankCell3" type="TextureRect" parent="L"]
 modulate = Color( 1, 1, 1, 0 )
@@ -266,13 +266,13 @@ columns = 3
 [node name="Cell" type="TextureRect" parent="Z"]
 margin_right = 26.0
 margin_bottom = 26.0
-texture = ExtResource( 21 )
+texture = ExtResource( 15 )
 
 [node name="Cell2" type="TextureRect" parent="Z"]
 margin_left = 26.0
 margin_right = 52.0
 margin_bottom = 26.0
-texture = ExtResource( 3 )
+texture = ExtResource( 16 )
 
 [node name="BlankCell" type="TextureRect" parent="Z"]
 modulate = Color( 1, 1, 1, 0 )
@@ -293,14 +293,14 @@ margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 19 )
+texture = ExtResource( 17 )
 
 [node name="Cell4" type="TextureRect" parent="Z"]
 margin_left = 52.0
 margin_top = 26.0
 margin_right = 78.0
 margin_bottom = 52.0
-texture = ExtResource( 15 )
+texture = ExtResource( 18 )
 
 [node name="BlankCell3" type="TextureRect" parent="Z"]
 modulate = Color( 1, 1, 1, 0 )
@@ -344,7 +344,7 @@ texture = ExtResource( 2 )
 margin_left = 26.0
 margin_right = 52.0
 margin_bottom = 26.0
-texture = ExtResource( 16 )
+texture = ExtResource( 19 )
 
 [node name="BlankCell2" type="TextureRect" parent="T"]
 modulate = Color( 1, 1, 1, 0 )
@@ -357,14 +357,14 @@ texture = ExtResource( 2 )
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 6 )
+texture = ExtResource( 20 )
 
 [node name="Cell3" type="TextureRect" parent="T"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 
 [node name="Cell4" type="TextureRect" parent="T"]
 margin_left = 52.0
