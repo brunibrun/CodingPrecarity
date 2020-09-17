@@ -94,9 +94,9 @@ rect_min_size = Vector2( 200, 0 )
 
 [node name="VBox" type="VBoxContainer" parent="Panel/HBoxContainer/Left"]
 margin_left = 25.0
-margin_top = 88.0
+margin_top = 100.0
 margin_right = 175.0
-margin_bottom = 452.0
+margin_bottom = 439.0
 custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
@@ -111,7 +111,7 @@ Shortage"
 modulate = Color( 0, 0, 0, 1 )
 margin_top = 55.0
 margin_right = 150.0
-margin_bottom = 149.0
+margin_bottom = 124.0
 custom_constants/vseparation = 6
 custom_constants/hseparation = 10
 columns = 2
@@ -163,6 +163,7 @@ custom_fonts/font = SubResource( 7 )
 text = "0"
 
 [node name="_Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
+visible = false
 margin_top = 75.0
 margin_right = 72.0
 margin_bottom = 94.0
@@ -170,9 +171,9 @@ custom_fonts/font = SubResource( 8 )
 text = "Rooms"
 
 [node name="Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 82.0
+visible = false
 margin_top = 75.0
-margin_right = 106.0
+margin_right = 72.0
 margin_bottom = 94.0
 custom_fonts/font = SubResource( 9 )
 text = "0"
@@ -246,9 +247,9 @@ margin_bottom = 104.0
 texture = ExtResource( 4 )
 
 [node name="NewGame" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 169.0
+margin_top = 144.0
 margin_right = 150.0
-margin_bottom = 197.0
+margin_bottom = 172.0
 custom_fonts/font = SubResource( 10 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -308,9 +309,9 @@ min_value = -24.0
 max_value = 0.0
 
 [node name="About" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 217.0
+margin_top = 192.0
 margin_right = 150.0
-margin_bottom = 245.0
+margin_bottom = 220.0
 custom_fonts/font = SubResource( 11 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -320,9 +321,9 @@ text = "About"
 flat = true
 
 [node name="Label2" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 265.0
+margin_top = 240.0
 margin_right = 150.0
-margin_bottom = 364.0
+margin_bottom = 339.0
 custom_fonts/font = SubResource( 12 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Here you can play the 

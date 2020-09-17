@@ -292,6 +292,7 @@ func _sound_is_on():
 
 func _on_Ticker_timeout():
 	var new_pos = pos + cols
+	gui.timer += -1
 	if move_shape(new_pos):
 		pass
 		#gui.score += bonus
