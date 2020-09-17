@@ -1,56 +1,56 @@
 [gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
-[ext_resource path="res://tile.png" type="Texture" id=2]
-[ext_resource path="res://grid.png" type="Texture" id=3]
-[ext_resource path="res://tile2.png" type="Texture" id=4]
-[ext_resource path="res://Fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://Fonts/RobotoMono-Regular.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Fonts/RobotoMono-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://tile.png" type="Texture" id=4]
+[ext_resource path="res://grid.png" type="Texture" id=5]
+[ext_resource path="res://tile2.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 5 )
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 14
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=3]
 size = 14
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 14
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 14
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 14
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=7]
 size = 14
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 14
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 14
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=10]
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=11]
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=12]
 size = 10
-font_data = ExtResource( 6 )
+font_data = ExtResource( 3 )
 
 [node name="GUI" type="CenterContainer"]
 pause_mode = 1
@@ -69,9 +69,9 @@ __meta__ = {
 
 [node name="Panel" type="PanelContainer" parent="."]
 light_mask = 0
-margin_left = 67.0
+margin_left = 51.0
 margin_top = 123.0
-margin_right = 591.0
+margin_right = 549.0
 margin_bottom = 677.0
 
 [node name="ColorRect" type="ColorRect" parent="Panel"]
@@ -187,9 +187,10 @@ margin_right = 147.0
 margin_bottom = 232.0
 
 [node name="Next" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox/CenterContainer"]
-margin_left = 47.0
-margin_right = 99.0
-margin_bottom = 104.0
+margin_left = 73.0
+margin_top = 52.0
+margin_right = 73.0
+margin_bottom = 52.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 2
@@ -197,52 +198,52 @@ columns = 2
 [node name="Cell" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
 margin_right = 26.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="Cell2" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
 margin_left = 26.0
 margin_right = 52.0
 margin_bottom = 26.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="Cell3" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
 margin_top = 26.0
 margin_right = 26.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="Cell4" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
 margin_left = 26.0
 margin_top = 26.0
 margin_right = 52.0
 margin_bottom = 52.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="Cell5" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
 margin_top = 52.0
 margin_right = 26.0
 margin_bottom = 78.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="Cell6" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
 margin_left = 26.0
 margin_top = 52.0
 margin_right = 52.0
 margin_bottom = 78.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="Cell7" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
 margin_top = 78.0
 margin_right = 26.0
 margin_bottom = 104.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="Cell8" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
 margin_left = 26.0
 margin_top = 78.0
 margin_right = 52.0
 margin_bottom = 104.0
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
 [node name="NewGame" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 169.0
@@ -351,7 +352,7 @@ margin_left = 8.0
 margin_top = 8.0
 margin_right = 272.0
 margin_bottom = 532.0
-texture = ExtResource( 3 )
+texture = ExtResource( 5 )
 
 [node name="Grid" type="GridContainer" parent="Panel/HBoxContainer/Right"]
 margin_left = 8.0
@@ -365,30 +366,30 @@ columns = 10
 [node name="Cell" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
 margin_right = 26.0
 margin_bottom = 26.0
-texture = ExtResource( 4 )
+texture = ExtResource( 6 )
 
 [node name="Cell2" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
 margin_left = 26.0
 margin_right = 52.0
 margin_bottom = 26.0
-texture = ExtResource( 4 )
+texture = ExtResource( 6 )
 
 [node name="Cell3" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
 margin_left = 52.0
 margin_right = 78.0
 margin_bottom = 26.0
-texture = ExtResource( 4 )
+texture = ExtResource( 6 )
 
 [node name="Cell4" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
 margin_left = 78.0
 margin_right = 104.0
 margin_bottom = 26.0
-texture = ExtResource( 4 )
+texture = ExtResource( 6 )
 
 [node name="AboutBox" type="AcceptDialog" parent="."]
-margin_left = 198.0
+margin_left = 168.0
 margin_top = 320.0
-margin_right = 461.0
+margin_right = 431.0
 margin_bottom = 480.0
 window_title = "Tetron"
 dialog_text = "Space bar - Hard drop

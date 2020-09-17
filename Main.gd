@@ -156,7 +156,7 @@ func _start_game():
 	if _music_is_on():
 		pass
 	clear_grid()
-	#gui.reset_stats(gui.high_score)
+	gui.reset_stats()
 	new_shape()
 
 

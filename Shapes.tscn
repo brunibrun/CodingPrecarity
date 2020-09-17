@@ -32,7 +32,6 @@
 [ext_resource path="res://shape_pictures/maedchen_4.png" type="Texture" id=30]
 
 [node name="Shapes" type="GridContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -21.8283
@@ -48,6 +47,8 @@ __meta__ = {
 }
 
 [node name="L" type="GridContainer" parent="."]
+editor/display_folded = true
+modulate = Color( 0.992157, 0.898039, 0.709804, 1 )
 margin_right = 78.0
 margin_bottom = 78.0
 custom_constants/vseparation = 0
@@ -117,6 +118,8 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="J" type="GridContainer" parent="."]
+editor/display_folded = true
+modulate = Color( 0.705882, 0.784314, 0.996078, 1 )
 margin_left = 98.0
 margin_right = 176.0
 margin_bottom = 78.0
@@ -187,6 +190,8 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="S" type="GridContainer" parent="."]
+editor/display_folded = true
+modulate = Color( 0.713726, 1, 0.807843, 1 )
 margin_left = 196.0
 margin_right = 300.0
 margin_bottom = 78.0
@@ -257,6 +262,8 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="Z" type="GridContainer" parent="."]
+editor/display_folded = true
+modulate = Color( 0.980392, 0.701961, 0.705882, 1 )
 margin_top = 98.0
 margin_right = 78.0
 margin_bottom = 202.0
@@ -327,6 +334,8 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="T" type="GridContainer" parent="."]
+editor/display_folded = true
+modulate = Color( 0.745098, 0.694118, 1, 1 )
 margin_left = 98.0
 margin_top = 98.0
 margin_right = 176.0
@@ -398,6 +407,8 @@ margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="I" type="GridContainer" parent="."]
+editor/display_folded = true
+modulate = Color( 0.709804, 0.894118, 1, 1 )
 margin_left = 196.0
 margin_top = 98.0
 margin_right = 300.0
@@ -523,6 +534,8 @@ margin_bottom = 104.0
 texture = ExtResource( 2 )
 
 [node name="C" type="GridContainer" parent="."]
+editor/display_folded = true
+modulate = Color( 0.984314, 0.772549, 1, 1 )
 margin_top = 222.0
 margin_right = 78.0
 margin_bottom = 274.0

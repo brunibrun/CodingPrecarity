@@ -35,7 +35,7 @@ func set_lines(value):
 
 
 func reset_stats( _score = 0, _lines = 0, _level = 1):
-#	self.high_score = _high_score
+	#self.high_score = _high_score
 	self.score = _score
 	self.lines = _lines
 	self.level = _level
