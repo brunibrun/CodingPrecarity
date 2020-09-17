@@ -155,7 +155,7 @@ func _start_game():
 	if _music_is_on():
 		_music(PLAY)
 	clear_grid()
-	gui.reset_stats(gui.high_score)
+	#gui.reset_stats(gui.high_score)
 	new_shape()
 
 
@@ -250,12 +250,12 @@ func add_to_score(rows):
 	var score = 10 * int(pow(2, rows - 1))
 	print("Added %d to score" % score)
 	gui.score += score
-	update_high_score()
+	#update_high_score()
 
 
-func update_high_score():
-	if gui.score > gui.high_score:
-		gui.high_score = gui.score
+#func update_high_score():
+	#if gui.score > gui.high_score:
+		#gui.high_score = gui.score
 
 
 func move_left():
@@ -292,7 +292,7 @@ func _on_Ticker_timeout():
 	var new_pos = pos + cols
 	if move_shape(new_pos):
 		gui.score += bonus
-		update_high_score()
+		#update_high_score()
 	else:
 		if new_pos <= END_POS:
 			_game_over()
@@ -372,7 +372,7 @@ func save_game():
 	var data = {
 		"music": gui.music,
 		"sound": gui.sound,
-		"high_score": gui.high_score
+		#"high_score": gui.high_score
 	}
 	var file = File.new()
 	file.open(FILE_NAME, File.WRITE)

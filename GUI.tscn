@@ -37,76 +37,82 @@ margin_bottom = 393.0
 rect_min_size = Vector2( 200, 0 )
 
 [node name="VBox" type="VBoxContainer" parent="Panel/HBoxContainer/Left"]
-margin_left = 33.0
-margin_right = 167.0
+margin_left = 26.0
+margin_right = 173.0
 margin_bottom = 393.0
 custom_constants/separation = 20
 
 [node name="Statistics" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox"]
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 74.0
 custom_constants/vseparation = 6
 custom_constants/hseparation = 10
 columns = 2
 
-[node name="_HighScore" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_right = 68.0
-margin_bottom = 14.0
-text = "High score"
-
-[node name="HighScore" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 78.0
-margin_right = 134.0
-margin_bottom = 14.0
-text = "8888888"
-
 [node name="_Level" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 20.0
-margin_right = 68.0
-margin_bottom = 34.0
-text = "Level"
+margin_right = 101.0
+margin_bottom = 14.0
+text = "Berlin"
 
 [node name="Level" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 78.0
+margin_left = 111.0
+margin_right = 147.0
+margin_bottom = 14.0
+text = "1870"
+
+[node name="_Countdown" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
 margin_top = 20.0
-margin_right = 134.0
+margin_right = 101.0
 margin_bottom = 34.0
-text = "1"
+text = "Stunde"
 
-[node name="_Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 40.0
-margin_right = 68.0
-margin_bottom = 54.0
-text = "Score"
-
-[node name="Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 78.0
-margin_top = 40.0
-margin_right = 134.0
-margin_bottom = 54.0
-text = "0"
+[node name="Cuntdown" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
+margin_left = 111.0
+margin_top = 20.0
+margin_right = 147.0
+margin_bottom = 34.0
+text = "00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="_Lines" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 60.0
-margin_right = 68.0
-margin_bottom = 74.0
-text = "Lines"
+margin_top = 40.0
+margin_right = 101.0
+margin_bottom = 54.0
+text = "Bewohner"
 
 [node name="Lines" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 78.0
+margin_left = 111.0
+margin_top = 40.0
+margin_right = 147.0
+margin_bottom = 54.0
+text = "0"
+
+[node name="_Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
 margin_top = 60.0
-margin_right = 134.0
+margin_right = 101.0
+margin_bottom = 74.0
+text = "Mieteinnahmen"
+
+[node name="Score" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
+margin_left = 111.0
+margin_top = 60.0
+margin_right = 147.0
 margin_bottom = 74.0
 text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CenterContainer" type="CenterContainer" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 94.0
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 201.0
 
 [node name="Next" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox/CenterContainer"]
-margin_left = 40.0
-margin_right = 93.0
+margin_left = 47.0
+margin_right = 100.0
 margin_bottom = 107.0
 custom_constants/vseparation = 1
 custom_constants/hseparation = 1
@@ -164,19 +170,19 @@ texture = ExtResource( 2 )
 
 [node name="NewGame" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 221.0
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 241.0
 text = "New Game"
 
 [node name="Pause" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 261.0
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 281.0
 text = "Pause"
 
 [node name="HBox" type="HBoxContainer" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 301.0
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 317.0
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/Left/VBox/HBox"]
@@ -187,7 +193,7 @@ text = "Music"
 
 [node name="Music" type="HSlider" parent="Panel/HBoxContainer/Left/VBox/HBox"]
 margin_left = 42.0
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 16.0
 size_flags_horizontal = 3
 min_value = -24.0
@@ -196,7 +202,7 @@ ticks_on_borders = true
 
 [node name="HBox2" type="HBoxContainer" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 337.0
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 353.0
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/Left/VBox/HBox2"]
@@ -207,7 +213,7 @@ text = "Sound"
 
 [node name="Sound" type="HSlider" parent="Panel/HBoxContainer/Left/VBox/HBox2"]
 margin_left = 43.0
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 16.0
 size_flags_horizontal = 3
 min_value = -24.0
@@ -215,7 +221,7 @@ max_value = 0.0
 
 [node name="About" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 373.0
-margin_right = 134.0
+margin_right = 147.0
 margin_bottom = 393.0
 text = "About"
 
