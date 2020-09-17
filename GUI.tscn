@@ -20,34 +20,34 @@ __meta__ = {
 
 [node name="Panel" type="PanelContainer" parent="."]
 light_mask = 0
-margin_left = 129.0
-margin_top = 231.0
-margin_right = 470.0
-margin_bottom = 569.0
+margin_left = 131.0
+margin_top = 237.0
+margin_right = 469.0
+margin_bottom = 563.0
 
 [node name="ColorRect" type="ColorRect" parent="Panel"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 334.0
-margin_bottom = 331.0
+margin_right = 331.0
+margin_bottom = 319.0
 color = Color( 0.980392, 0.980392, 0.980392, 1 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 334.0
-margin_bottom = 331.0
+margin_right = 331.0
+margin_bottom = 319.0
 size_flags_horizontal = 0
 
 [node name="Left" type="CenterContainer" parent="Panel/HBoxContainer"]
 margin_right = 200.0
-margin_bottom = 324.0
+margin_bottom = 312.0
 rect_min_size = Vector2( 200, 0 )
 
 [node name="VBox" type="VBoxContainer" parent="Panel/HBoxContainer/Left"]
 margin_left = 26.0
 margin_right = 173.0
-margin_bottom = 324.0
+margin_bottom = 312.0
 custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
@@ -123,15 +123,16 @@ __meta__ = {
 }
 
 [node name="CenterContainer" type="CenterContainer" parent="Panel/HBoxContainer/Left/VBox"]
-editor/display_folded = true
 margin_top = 128.0
 margin_right = 147.0
-margin_bottom = 244.0
+margin_bottom = 232.0
 
 [node name="Next" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox/CenterContainer"]
-margin_left = 45.0
-margin_right = 101.0
-margin_bottom = 116.0
+margin_left = 47.0
+margin_right = 99.0
+margin_bottom = 104.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
 columns = 2
 
 [node name="Cell" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
@@ -140,54 +141,54 @@ margin_bottom = 26.0
 texture = ExtResource( 2 )
 
 [node name="Cell2" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
-margin_left = 30.0
-margin_right = 56.0
+margin_left = 26.0
+margin_right = 52.0
 margin_bottom = 26.0
 texture = ExtResource( 2 )
 
 [node name="Cell3" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
-margin_top = 30.0
+margin_top = 26.0
 margin_right = 26.0
-margin_bottom = 56.0
+margin_bottom = 52.0
 texture = ExtResource( 2 )
 
 [node name="Cell4" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
-margin_left = 30.0
-margin_top = 30.0
-margin_right = 56.0
-margin_bottom = 56.0
+margin_left = 26.0
+margin_top = 26.0
+margin_right = 52.0
+margin_bottom = 52.0
 texture = ExtResource( 2 )
 
 [node name="Cell5" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
-margin_top = 60.0
+margin_top = 52.0
 margin_right = 26.0
-margin_bottom = 86.0
+margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="Cell6" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
-margin_left = 30.0
-margin_top = 60.0
-margin_right = 56.0
-margin_bottom = 86.0
+margin_left = 26.0
+margin_top = 52.0
+margin_right = 52.0
+margin_bottom = 78.0
 texture = ExtResource( 2 )
 
 [node name="Cell7" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
-margin_top = 90.0
+margin_top = 78.0
 margin_right = 26.0
-margin_bottom = 116.0
+margin_bottom = 104.0
 texture = ExtResource( 2 )
 
 [node name="Cell8" type="TextureRect" parent="Panel/HBoxContainer/Left/VBox/CenterContainer/Next"]
-margin_left = 30.0
-margin_top = 90.0
-margin_right = 56.0
-margin_bottom = 116.0
+margin_left = 26.0
+margin_top = 78.0
+margin_right = 52.0
+margin_bottom = 104.0
 texture = ExtResource( 2 )
 
 [node name="NewGame" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 264.0
+margin_top = 252.0
 margin_right = 147.0
-margin_bottom = 284.0
+margin_bottom = 272.0
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.498039, 0.498039, 0.498039, 1 )
@@ -248,9 +249,9 @@ min_value = -24.0
 max_value = 0.0
 
 [node name="About" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 304.0
+margin_top = 292.0
 margin_right = 147.0
-margin_bottom = 324.0
+margin_bottom = 312.0
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
@@ -259,10 +260,9 @@ text = "About"
 flat = true
 
 [node name="Right" type="MarginContainer" parent="Panel/HBoxContainer"]
-editor/display_folded = true
 margin_left = 204.0
-margin_right = 327.0
-margin_bottom = 324.0
+margin_right = 324.0
+margin_bottom = 312.0
 custom_constants/margin_right = 8
 custom_constants/margin_top = 8
 custom_constants/margin_left = 8
@@ -271,16 +271,16 @@ custom_constants/margin_bottom = 8
 [node name="ColorRect" type="ColorRect" parent="Panel/HBoxContainer/Right"]
 margin_left = 8.0
 margin_top = 8.0
-margin_right = 115.0
-margin_bottom = 316.0
+margin_right = 112.0
+margin_bottom = 304.0
 
 [node name="Grid" type="GridContainer" parent="Panel/HBoxContainer/Right"]
 margin_left = 8.0
 margin_top = 8.0
-margin_right = 115.0
-margin_bottom = 316.0
-custom_constants/vseparation = 1
-custom_constants/hseparation = 1
+margin_right = 112.0
+margin_bottom = 304.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
 columns = 10
 
 [node name="Cell" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
@@ -289,20 +289,20 @@ margin_bottom = 26.0
 texture = ExtResource( 2 )
 
 [node name="Cell2" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
-margin_left = 27.0
-margin_right = 53.0
+margin_left = 26.0
+margin_right = 52.0
 margin_bottom = 26.0
 texture = ExtResource( 2 )
 
 [node name="Cell3" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
-margin_left = 54.0
-margin_right = 80.0
+margin_left = 52.0
+margin_right = 78.0
 margin_bottom = 26.0
 texture = ExtResource( 2 )
 
 [node name="Cell4" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
-margin_left = 81.0
-margin_right = 107.0
+margin_left = 78.0
+margin_right = 104.0
 margin_bottom = 26.0
 texture = ExtResource( 2 )
 
