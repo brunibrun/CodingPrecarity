@@ -93,9 +93,9 @@ rect_min_size = Vector2( 200, 0 )
 
 [node name="VBox" type="VBoxContainer" parent="Panel/HBoxContainer/Left"]
 margin_left = 25.0
-margin_top = 111.0
+margin_top = 93.0
 margin_right = 175.0
-margin_bottom = 425.0
+margin_bottom = 443.0
 custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
@@ -206,10 +206,9 @@ margin_right = 147.0
 margin_bottom = 232.0
 
 [node name="Next" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox/CenterContainer"]
-margin_left = 73.0
-margin_top = 52.0
-margin_right = 73.0
-margin_bottom = 52.0
+margin_left = 47.0
+margin_right = 99.0
+margin_bottom = 104.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 2
@@ -341,7 +340,7 @@ flat = true
 [node name="Label2" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 240.0
 margin_right = 150.0
-margin_bottom = 314.0
+margin_bottom = 350.0
 custom_fonts/font = SubResource( 12 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_constants/line_spacing = -2
@@ -350,7 +349,10 @@ Housing Shortage-Tetris!
 Move the typical
 inhabitants of 19th 
 century Berlin into the 
-available space."
+available space.
+
+Based on 'Tetron' 
+by andrew-wilkes."
 
 [node name="Right" type="MarginContainer" parent="Panel/HBoxContainer"]
 margin_left = 204.0
@@ -390,17 +392,16 @@ texture = ExtResource( 4 )
 
 [node name="AboutBox" type="AcceptDialog" parent="."]
 margin_left = 168.0
-margin_top = 320.0
+margin_top = 328.0
 margin_right = 431.0
-margin_bottom = 480.0
+margin_bottom = 471.0
 window_title = "Tetron"
 dialog_text = "Space bar - Hard drop
 Down arrow - Soft drop
 Left arrow - move left
 Right arrow - move right
 Up arrow - rotate clockwise
-Shift + Up arrow - rotate anti-clockwise
-Page Up - increase level on each press"
+Shift + Up arrow - rotate anti-clockwise"
 [connection signal="button_down" from="Panel/HBoxContainer/Left/VBox/NewGame" to="." method="_on_NewGame_button_down"]
 [connection signal="button_down" from="Panel/HBoxContainer/Left/VBox/Pause" to="." method="_on_Pause_button_down"]
 [connection signal="value_changed" from="Panel/HBoxContainer/Left/VBox/HBox/Music" to="." method="_on_Music_value_changed"]
