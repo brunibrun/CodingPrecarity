@@ -325,6 +325,7 @@ margin_bottom = 16.0
 size_flags_horizontal = 3
 min_value = -24.0
 max_value = 0.0
+ticks_on_borders = true
 
 [node name="About" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
 margin_top = 192.0
@@ -385,6 +386,24 @@ columns = 10
 
 [node name="Cell" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
 margin_right = 26.0
+margin_bottom = 26.0
+texture = ExtResource( 4 )
+
+[node name="Cell2" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
+margin_left = 26.0
+margin_right = 52.0
+margin_bottom = 26.0
+texture = ExtResource( 4 )
+
+[node name="Cell3" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
+margin_left = 52.0
+margin_right = 78.0
+margin_bottom = 26.0
+texture = ExtResource( 4 )
+
+[node name="Cell4" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
+margin_left = 78.0
+margin_right = 104.0
 margin_bottom = 26.0
 texture = ExtResource( 4 )
 
