@@ -1,37 +1,36 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Fonts/RobotoMono-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://tile.png" type="Texture" id=4]
-[ext_resource path="res://grid.png" type="Texture" id=5]
-[ext_resource path="res://tile2.png" type="Texture" id=6]
+[ext_resource path="res://new_grid.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 10
+size = 14
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 10
+size = 14
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 10
+size = 14
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 10
+size = 14
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 10
+size = 14
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=7]
-size = 10
+size = 14
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=8]
@@ -43,12 +42,10 @@ size = 14
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=10]
-size = 10
-font_data = ExtResource( 2 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=11]
-size = 10
-font_data = ExtResource( 2 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=12]
 size = 10
@@ -71,34 +68,34 @@ __meta__ = {
 
 [node name="Panel" type="PanelContainer" parent="."]
 light_mask = 0
-margin_left = 216.0
-margin_top = 123.0
-margin_right = 714.0
-margin_bottom = 677.0
+margin_left = 53.0
+margin_top = 125.0
+margin_right = 547.0
+margin_bottom = 675.0
 
 [node name="ColorRect" type="ColorRect" parent="Panel"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 491.0
-margin_bottom = 547.0
+margin_right = 487.0
+margin_bottom = 543.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
 margin_left = 7.0
 margin_top = 7.0
-margin_right = 491.0
-margin_bottom = 547.0
+margin_right = 487.0
+margin_bottom = 543.0
 size_flags_horizontal = 0
 
 [node name="Left" type="CenterContainer" parent="Panel/HBoxContainer"]
 margin_right = 200.0
-margin_bottom = 540.0
+margin_bottom = 536.0
 rect_min_size = Vector2( 200, 0 )
 
 [node name="VBox" type="VBoxContainer" parent="Panel/HBoxContainer/Left"]
 margin_left = 25.0
-margin_top = 132.0
+margin_top = 111.0
 margin_right = 175.0
-margin_bottom = 407.0
+margin_bottom = 425.0
 custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
@@ -113,21 +110,21 @@ SHORTAGE"
 modulate = Color( 0, 0, 0, 1 )
 margin_top = 55.0
 margin_right = 150.0
-margin_bottom = 109.0
+margin_bottom = 124.0
 custom_constants/vseparation = 6
 custom_constants/hseparation = 10
 columns = 2
 
 [node name="_Level" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_right = 54.0
-margin_bottom = 14.0
+margin_right = 72.0
+margin_bottom = 19.0
 custom_fonts/font = SubResource( 2 )
 text = "Level"
 
 [node name="Level" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 64.0
-margin_right = 76.0
-margin_bottom = 14.0
+margin_left = 82.0
+margin_right = 98.0
+margin_bottom = 19.0
 custom_fonts/font = SubResource( 3 )
 text = "1"
 
@@ -151,32 +148,32 @@ __meta__ = {
 }
 
 [node name="_Lines" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 20.0
-margin_right = 54.0
-margin_bottom = 34.0
+margin_top = 25.0
+margin_right = 72.0
+margin_bottom = 44.0
 custom_fonts/font = SubResource( 6 )
 text = "Residents"
 
 [node name="Lines" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 64.0
-margin_top = 20.0
-margin_right = 76.0
-margin_bottom = 34.0
+margin_left = 82.0
+margin_top = 25.0
+margin_right = 98.0
+margin_bottom = 44.0
 custom_fonts/font = SubResource( 7 )
 text = "0"
 
 [node name="_Goal" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_top = 40.0
-margin_right = 54.0
-margin_bottom = 54.0
+margin_top = 50.0
+margin_right = 72.0
+margin_bottom = 69.0
 custom_fonts/font = SubResource( 4 )
 text = "Required"
 
 [node name="Goal" type="Label" parent="Panel/HBoxContainer/Left/VBox/Statistics"]
-margin_left = 64.0
-margin_top = 40.0
-margin_right = 76.0
-margin_bottom = 54.0
+margin_left = 82.0
+margin_top = 50.0
+margin_right = 98.0
+margin_bottom = 69.0
 custom_fonts/font = SubResource( 5 )
 text = "15"
 __meta__ = {
@@ -209,9 +206,10 @@ margin_right = 147.0
 margin_bottom = 232.0
 
 [node name="Next" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox/CenterContainer"]
-margin_left = 47.0
-margin_right = 99.0
-margin_bottom = 104.0
+margin_left = 73.0
+margin_top = 52.0
+margin_right = 73.0
+margin_bottom = 52.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 2
@@ -267,9 +265,9 @@ margin_bottom = 104.0
 texture = ExtResource( 4 )
 
 [node name="NewGame" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 129.0
+margin_top = 144.0
 margin_right = 150.0
-margin_bottom = 145.0
+margin_bottom = 172.0
 custom_fonts/font = SubResource( 10 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -329,9 +327,9 @@ min_value = -24.0
 max_value = 0.0
 
 [node name="About" type="Button" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 165.0
+margin_top = 192.0
 margin_right = 150.0
-margin_bottom = 181.0
+margin_bottom = 220.0
 custom_fonts/font = SubResource( 11 )
 custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -341,9 +339,9 @@ text = "ABOUT"
 flat = true
 
 [node name="Label2" type="Label" parent="Panel/HBoxContainer/Left/VBox"]
-margin_top = 201.0
+margin_top = 240.0
 margin_right = 150.0
-margin_bottom = 275.0
+margin_bottom = 314.0
 custom_fonts/font = SubResource( 12 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_constants/line_spacing = -2
@@ -356,8 +354,8 @@ available space."
 
 [node name="Right" type="MarginContainer" parent="Panel/HBoxContainer"]
 margin_left = 204.0
-margin_right = 484.0
-margin_bottom = 540.0
+margin_right = 480.0
+margin_bottom = 536.0
 custom_constants/margin_right = 8
 custom_constants/margin_top = 8
 custom_constants/margin_left = 8
@@ -366,21 +364,21 @@ custom_constants/margin_bottom = 8
 [node name="ColorRect" type="ColorRect" parent="Panel/HBoxContainer/Right"]
 margin_left = 8.0
 margin_top = 8.0
-margin_right = 272.0
-margin_bottom = 532.0
+margin_right = 268.0
+margin_bottom = 528.0
 
 [node name="TextureRect" type="TextureRect" parent="Panel/HBoxContainer/Right"]
 margin_left = 8.0
 margin_top = 8.0
-margin_right = 272.0
-margin_bottom = 532.0
+margin_right = 268.0
+margin_bottom = 528.0
 texture = ExtResource( 5 )
 
 [node name="Grid" type="GridContainer" parent="Panel/HBoxContainer/Right"]
 margin_left = 8.0
 margin_top = 8.0
-margin_right = 272.0
-margin_bottom = 532.0
+margin_right = 268.0
+margin_bottom = 528.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 10
@@ -388,30 +386,12 @@ columns = 10
 [node name="Cell" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
 margin_right = 26.0
 margin_bottom = 26.0
-texture = ExtResource( 6 )
-
-[node name="Cell2" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
-margin_left = 26.0
-margin_right = 52.0
-margin_bottom = 26.0
-texture = ExtResource( 6 )
-
-[node name="Cell3" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
-margin_left = 52.0
-margin_right = 78.0
-margin_bottom = 26.0
-texture = ExtResource( 6 )
-
-[node name="Cell4" type="TextureRect" parent="Panel/HBoxContainer/Right/Grid"]
-margin_left = 78.0
-margin_right = 104.0
-margin_bottom = 26.0
-texture = ExtResource( 6 )
+texture = ExtResource( 4 )
 
 [node name="AboutBox" type="AcceptDialog" parent="."]
-margin_left = 333.0
+margin_left = 168.0
 margin_top = 320.0
-margin_right = 596.0
+margin_right = 431.0
 margin_bottom = 480.0
 window_title = "Tetron"
 dialog_text = "Space bar - Hard drop
