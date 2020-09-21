@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=2]
+
+[node name="Main" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GUI" parent="." instance=ExtResource( 2 )]
+pause_mode = 2
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 53.0
+margin_top = 125.0
+margin_right = 547.0
+margin_bottom = 675.0
+
+[node name="Ticker" type="Timer" parent="."]
+
+[node name="LeftTimer" type="Timer" parent="."]
+
+[node name="RightTimer" type="Timer" parent="."]
+[connection signal="timeout" from="Ticker" to="." method="_on_Ticker_timeout"]
+[connection signal="timeout" from="LeftTimer" to="." method="_on_LeftTimer_timeout"]
+[connection signal="timeout" from="RightTimer" to="." method="_on_RightTimer_timeout"]
