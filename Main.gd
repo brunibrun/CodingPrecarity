@@ -16,7 +16,6 @@ const FILE_NAME = "user://tetron.json"
 
 var gui
 var state = STOPPED
-var music_position = 0.0
 var grid = []
 var cols
 var shape: ShapeData
@@ -92,7 +91,6 @@ func place_shape(index, add_tiles = false, lock = false, color = Color(0)):
 		for x in size:
 			if shape.grid[y][x]:
 				var grid_pos = index + (y + offset) * cols + x + offset
-				#print(grid_pos)
 				if lock:
 					grid[grid_pos] = true
 				else:
@@ -119,31 +117,11 @@ func _button_pressed(button_name):
 				gui.set_button_text("Pause", "Resume")
 				state = PAUSED
 				pause() # Also, set pause mode of GUI to Process
-				if _music_is_on():
-					_music(PAUSE)
 			else:
 				gui.set_button_text("Pause", "Pause")
 				state = PLAYING
 				pause(false)
-				if _music_is_on():
-					_music(PLAY)
-		
-		"Music":
-			# copy gui.music value to data
-			if state == PLAYING:
-				if _music_is_on():
-					print("Music changed. Level: %d" % gui.music)
-					_music(PLAY)
-				else:
-					_music(STOP)
-		
-		"Sound":
-			# copy gui.sound value to data
-			if _sound_is_on():
-				$SoundPlayer.volume_db = gui.sound
-				print("Sound changed. Level: %d" % gui.sound)
-			else:
-				print("Sound off")
+
 		
 		"About":
 			gui.set_button_state("About", DISABLED)
@@ -152,9 +130,6 @@ func _button_pressed(button_name):
 func _start_game():
 	print("Game playing")
 	state = PLAYING
-	music_position = 0.0
-	if _music_is_on():
-		pass
 	clear_grid()
 	gui.reset_stats()
 	new_shape()
@@ -241,10 +216,6 @@ func _game_over():
 	$LeftTimer.stop()
 	$RightTimer.stop()
 	gui.set_button_states(ENABLED)
-	if _music_is_on():
-		_music(STOP)
-	if _sound_is_on():
-		$SoundPlayer.play()
 	state = STOPPED
 	print("Game stopped")
 	save_game()
@@ -255,12 +226,6 @@ func add_to_score(rows):
 	var score = 10 * int(pow(2, rows - 1))
 	print("Added %d to score" % score)
 	gui.score += score
-	#update_high_score()
-
-
-#func update_high_score():
-	#if gui.score > gui.high_score:
-		#gui.high_score = gui.score
 
 
 func move_left():
@@ -273,39 +238,17 @@ func move_right():
 		move_shape(pos + 1)
 
 
-func _music(action):
-	if action == PLAY:
-		$MusicPlayer.volume_db = gui.music
-		if !$MusicPlayer.is_playing():
-			$MusicPlayer.play(music_position)
-		print("Music changed")
-	else:
-		music_position = $MusicPlayer.get_playback_position()
-		$MusicPlayer.stop()
-		print("Music stopped")
-
-
-func _music_is_on():
-	return gui.music > gui.min_vol
-
-
-func _sound_is_on():
-	return gui.sound > gui.min_vol
-
 
 func _on_Ticker_timeout():
 	var new_pos = pos + cols
 	gui.timer += -1
 	if move_shape(new_pos):
 		pass
-		#gui.score += bonus
-		#update_high_score()
 	else:
 		if new_pos <= END_POS:
 			_game_over()
 		else:
 			lock_shape_to_grid()
-			#check_rows()
 			new_shape()
 
 
@@ -336,8 +279,6 @@ func remove_rows(rows):
 		var rows_moved = 0
 		add_to_score(rows.size())
 		pause()
-		if _sound_is_on():
-			$SoundPlayer.play()
 		yield(get_tree().create_timer(0.3), "timeout")
 		pause(false)
 		remove_shape_from_grid()
@@ -376,11 +317,7 @@ func _on_RightTimer_timeout():
 
 
 func save_game():
-	var data = {
-		"music": gui.music,
-		"sound": gui.sound,
-		#"high_score": gui.high_score
-	}
+	var data = {}
 	var file = File.new()
 	file.open(FILE_NAME, File.WRITE)
 	file.store_string(to_json(data))
@@ -393,4 +330,3 @@ func load_game():
 		file.open(FILE_NAME, File.READ)
 		var data = parse_json(file.get_as_text())
 		print(data)
-		gui.settings(data)

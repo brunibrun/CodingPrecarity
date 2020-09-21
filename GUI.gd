@@ -54,17 +54,13 @@ func reset_stats( _score = 0, _lines = 0, _level = 1, _timer = 120, _goal = 20):
 	self.goal  = _goal
 
 
-func settings(data):
-	#self.high_score = data.high_score
-	find_node("Music").value = data.music
-	find_node("Sound").value = data.sound
+#func settings(data):
+
 
 
 func _ready():
 	grid = find_node("Grid")
 	next = find_node("Next")
-	min_vol = find_node("Music").get_min()
-	find_node("Sound").set_min(min_vol)
 	add_cells(grid, 200)
 	clear_all_cells()
 
