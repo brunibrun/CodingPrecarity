@@ -22,7 +22,7 @@ _global_script_class_icons={
 
 config/name="HOUSING_SHORTAGE"
 run/main_scene="res://Main.tscn"
-config/icon="res://icon.png"
+config/icon="res://pictures/icon.png"
 
 [autoload]
 

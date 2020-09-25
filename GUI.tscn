@@ -1,10 +1,10 @@
 [gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
-[ext_resource path="res://Fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Fonts/RobotoMono-Regular.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://tile.png" type="Texture" id=4]
-[ext_resource path="res://new_grid.png" type="Texture" id=5]
+[ext_resource path="res://fonts/PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://fonts/RobotoMono-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://pictures/tile.png" type="Texture" id=4]
+[ext_resource path="res://pictures/new_grid.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )
