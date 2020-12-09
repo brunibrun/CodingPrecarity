@@ -30,10 +30,11 @@ Shapes="*res://Shapes.tscn"
 
 [display]
 
-window/size/width=600
-window/size/height=800
+window/size/width=500
+window/size/height=550
 window/handheld/orientation="portrait"
 
 [rendering]
 
+environment/default_clear_color=Color( 0.705882, 0.784314, 0.941176, 1 )
 environment/default_environment="res://default_env.tres"

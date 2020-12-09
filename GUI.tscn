@@ -60,11 +60,11 @@ font_data = ExtResource( 3 )
 [node name="GUI" type="CenterContainer"]
 pause_mode = 1
 anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -3.54232
-margin_top = 8.5321
-margin_right = -3.5423
-margin_bottom = 8.5321
+anchor_bottom = 0.791
+margin_left = 0.0784454
+margin_top = 0.0784473
+margin_right = 1.07843
+margin_bottom = 115.028
 size_flags_horizontal = 0
 size_flags_vertical = 0
 script = ExtResource( 1 )
@@ -74,12 +74,12 @@ __meta__ = {
 
 [node name="Panel" type="PanelContainer" parent="."]
 light_mask = 0
-margin_left = 53.0
-margin_top = 125.0
-margin_right = 547.0
-margin_bottom = 675.0
+margin_left = 3.0
+margin_right = 497.0
+margin_bottom = 550.0
 
 [node name="ColorRect" type="ColorRect" parent="Panel"]
+light_mask = 0
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 487.0
@@ -91,6 +91,8 @@ margin_top = 7.0
 margin_right = 487.0
 margin_bottom = 543.0
 size_flags_horizontal = 0
+size_flags_stretch_ratio = 0.0
+alignment = 1
 
 [node name="Left" type="CenterContainer" parent="Panel/HBoxContainer"]
 margin_right = 200.0
@@ -207,13 +209,13 @@ __meta__ = {
 
 [node name="CenterContainer" type="CenterContainer" parent="Panel/HBoxContainer/Left/VBox"]
 visible = false
-margin_top = 128.0
-margin_right = 147.0
-margin_bottom = 232.0
+margin_top = 129.0
+margin_right = 150.0
+margin_bottom = 233.0
 
 [node name="Next" type="GridContainer" parent="Panel/HBoxContainer/Left/VBox/CenterContainer"]
-margin_left = 47.0
-margin_right = 99.0
+margin_left = 49.0
+margin_right = 101.0
 margin_bottom = 104.0
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
@@ -290,9 +292,9 @@ text = "Pause"
 
 [node name="HBox" type="HBoxContainer" parent="Panel/HBoxContainer/Left/VBox"]
 visible = false
-margin_top = 310.0
-margin_right = 147.0
-margin_bottom = 326.0
+margin_top = 165.0
+margin_right = 150.0
+margin_bottom = 165.0
 
 [node name="Label" type="Label" parent="Panel/HBoxContainer/Left/VBox/HBox"]
 visible = false
@@ -423,10 +425,10 @@ margin_bottom = 26.0
 texture = ExtResource( 4 )
 
 [node name="AboutBox" type="AcceptDialog" parent="."]
-margin_left = 168.0
-margin_top = 328.0
-margin_right = 431.0
-margin_bottom = 471.0
+margin_left = 119.0
+margin_top = 203.0
+margin_right = 382.0
+margin_bottom = 346.0
 window_title = "Tetron"
 dialog_text = "Space bar - Hard drop
 Down arrow - Soft drop

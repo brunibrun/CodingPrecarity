@@ -15,10 +15,10 @@ __meta__ = {
 pause_mode = 2
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 53.0
-margin_top = 125.0
-margin_right = 547.0
-margin_bottom = 675.0
+margin_left = 3.0
+margin_top = 0.0
+margin_right = 497.0
+margin_bottom = 550.0
 
 [node name="Ticker" type="Timer" parent="."]
 
